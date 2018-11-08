@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import moment from 'moment';
 
+import List from './List';
+
 import {
   Wait4Me,
   FigureItem,
@@ -20,7 +22,26 @@ export default class App extends Component {
       activeRangeNo: 2
     },
     activeStatusNo: 0,
-
+    initialItems: [
+      "Apples",
+      "Broccoli",
+      "Chicken",
+      "Duck",
+      "Eggs",
+      "Fish",
+      "Granola",
+      "Hash Browns"
+    ],
+    items: [
+      "Apples",
+      "Broccoli",
+      "Chicken",
+      "Duck",
+      "Eggs",
+      "Fish",
+      "Granola",
+      "Hash Browns"
+    ],
   }
 
   onDatesChange = (start, end, rangeNo) => {
@@ -41,6 +62,13 @@ export default class App extends Component {
       ...this.state,
       activeStatusNo: index
     })
+  }
+
+  onFilterItems = filteredItems => {
+    this.setState({
+      ...this.state,
+      items: filteredItems,
+    });
   }
 
   render () {
@@ -277,7 +305,7 @@ export default class App extends Component {
     // RangedDtPicker state: dateRange: {startDate, endDate, activeRangeNo}
     // StatusFilter state: activeStatusNo
 
-    const {dateRange: {startDate, endDate, activeRangeNo}, activeStatusNo } = this.state
+    const {dateRange: {startDate, endDate, activeRangeNo}, activeStatusNo, initialItems, items } = this.state
 
     return (
       <div>
@@ -291,9 +319,14 @@ export default class App extends Component {
           <h4>StatusFilter Component</h4>
         </div>
 
-        <div style={{marginBottom: '10px'}}>
-          <StatusFilter filterData={statusFilterData} statusData={statusData}
-              activeIndex={activeStatusNo} handleClick={this.onStatusFilterChange} />
+        <div className="row" style={{marginBottom: '10px'}}>
+          <div className="col-sm-8 offset-sm-1">
+            <StatusFilter
+              filterData={statusFilterData}
+              statusData={statusData}
+              activeIndex={activeStatusNo}
+              handleClick={this.onStatusFilterChange} />
+          </div>
         </div>
 
         <div style={{ marginBottom: '30px' }} className="row col-sm-12">
@@ -310,8 +343,14 @@ export default class App extends Component {
           <h4>RangedDtPicker Component</h4>
         </div>
         
-        <div style={{marginBottom: '10px'}}>
-          <RangedDtPicker startDate={startDate} endDate={endDate} activeRangeNo={activeRangeNo} onDatesChange={this.onDatesChange} />
+        <div className="row" style={{marginBottom: '10px'}}>
+          <div className="col-sm-8 offset-sm-1">
+            <RangedDtPicker
+              startDate={startDate}
+              endDate={endDate}
+              activeRangeNo={activeRangeNo}
+              onDatesChange={this.onDatesChange} />
+          </div>
         </div>
 
         <div style={{ marginBottom: '30px' }} className="row col-sm-12">
@@ -334,13 +373,15 @@ export default class App extends Component {
           <h4>CircularProgressBar Component</h4>
         </div>
 
-        <div style={{marginBottom: '50px'}}>
-          <CircularProgressBar
-            sqSize={CircularProgressBar_SAMPLESQSIZE}
-            percentage={CircularProgressBar_SAMPLEPERCENTAGE}
-            strokeWidth={CircularProgressBar_SAMPLESTROKEWIDTH}
-            strokeFill={CircularProgressBar_SAMPLESTROKEFILL}
-          />
+        <div className="row" style={{marginBottom: '50px'}}>
+          <div className="col-sm-4 offset-sm-1">
+            <CircularProgressBar
+              sqSize={CircularProgressBar_SAMPLESQSIZE}
+              percentage={CircularProgressBar_SAMPLEPERCENTAGE}
+              strokeWidth={CircularProgressBar_SAMPLESTROKEWIDTH}
+              strokeFill={CircularProgressBar_SAMPLESTROKEFILL}
+            />
+          </div>
         </div>
 
         <div style={{ marginBottom: '30px' }} className="row col-sm-12">
@@ -348,8 +389,9 @@ export default class App extends Component {
         </div>
 
         <div style={{ marginBottom: '30px' }} className="row">
-          <div className="col-sm-4">
-            <SearchBar />
+          <div className="col-sm-4 offset-sm-1">
+            <SearchBar initialItems={initialItems} onFilter={this.onFilterItems} />
+            <List items={items} />
           </div>
         </div>
 

@@ -1,49 +1,46 @@
 import React from 'react';
-import List from './List';
 
 export default class FilteredList extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      initialItems: [
-        "Apples",
-        "Broccoli",
-        "Chicken",
-        "Duck",
-        "Eggs",
-        "Fish",
-        "Granola",
-        "Hash Browns"
-      ],
-      items: []
-    };
   }
 
   filterList = e => {
-    const { initialItems } = this.state;
+    const { initialItems } = this.props;
     const { onFilter } = this.props;
+    const searchKeyword = e.target.value;
 
-    // Filter items according to SearchBar input
-    const updatedList = initialItems.filter(item  => {
-      return item.toLowerCase().search(
-        e.target.value.toLowerCase()) !== -1;
-    });
+    // if searchKeyword is available, proceed to filter
+    if (searchKeyword && searchKeyword.trim() !== '') {
+      // check if there are items to begin with
+      if (initialItems && Array.isArray(initialItems) && initialItems.length > 0) {
+        // Filter items according to SearchBar input
+        const updatedList = initialItems.filter(item  => {
+          return item.toLowerCase().search(
+            searchKeyword.toLowerCase()) !== -1;
+        });
+  
+        if (onFilter) {
+          onFilter(updatedList);
+        }
+      }
 
-    this.setState({items: updatedList});
-
-    if (onFilter) {
-      onFilter(updatedList);
+      return;
     }
+
+    // if not, return original items
+    if (onFilter) {
+      onFilter(initialItems);
+    }
+    return;
   }
 
   render() {
-    const { items, initialItems } = this.state;
     return (
       <div className="filter-list">
           <fieldset className="form-group">
           <input type="text" className="form-control form-control-md" placeholder="Search" onChange={this.filterList}/>
           </fieldset>
-          <List items={items.length > 0 ? items : initialItems}/>
       </div>
     );
   }
