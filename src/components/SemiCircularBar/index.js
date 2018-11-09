@@ -30,8 +30,4 @@ class SemiCircularBar extends React.Component { // eslint-disable-line react/pre
   }
 }
 
-SemiCircularBar.propTypes = {
-
-};
-
 export default SemiCircularBar;
