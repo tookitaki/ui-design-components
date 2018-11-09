@@ -1,15 +1,15 @@
 import React from 'react';
 import { Tabs } from 'antd';
 
-import CircularProgressBarSandbox from './Sandboxes/CircularProgressBar';
-import FigureItemSandbox from './Sandboxes/FigureItem';
-import FilterDropdownSandbox from './Sandboxes/FilterDropdown';
-import RangeDtPickerSandbox from './Sandboxes/RangedDtPicker';
-import SearchBarSandbox from './Sandboxes/SearchBar';
-import SemiCircularBarSandbox from './Sandboxes/SemiCircularBar';
-import StatusFilterSandbox from './Sandboxes/StatusFilter';
-import { UniTableSandbox, UniTableSearchSandbox } from './Sandboxes/UniTable';
-import Wait4MeSandbox from './Sandboxes/Wait4Me';
+import CircularProgressBarSandbox from './sandboxes/CircularProgressBar';
+import FigureItemSandbox from './sandboxes/FigureItem';
+import FilterDropdownSandbox from './sandboxes/FilterDropdown';
+import RangeDtPickerSandbox from './sandboxes/RangedDtPicker';
+import SearchBarSandbox from './sandboxes/SearchBar';
+import SemiCircularBarSandbox from './sandboxes/SemiCircularBar';
+import StatusFilterSandbox from './sandboxes/StatusFilter';
+import { UniTableSandbox, UniTableSearchSandbox } from './sandboxes/UniTable';
+import Wait4MeSandbox from './sandboxes/Wait4Me';
 
 const TabPane = Tabs.TabPane;
 
