@@ -1,0 +1,53 @@
+.wrapper{
+    position: relative;
+    width: 85px;
+    height: 50px;
+
+    .progressbarText{
+        position: absolute;
+        top: -24px !important;
+        left: 50%;
+        padding: 0px;
+        margin: 0px;
+        transform: translate(-50%, 50%);
+        bottom: 0px;
+        color: #455058;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .secondProgressbarText {
+        position: absolute;
+        top: 14px !important;
+        left: 50%;
+        padding: 0px;
+        margin: 0px;
+        transform: translate(-50%, 50%);
+        bottom: 0px;
+        color: #637480;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    
+    span{
+        position: absolute;
+        &.min, &.max{
+            color: #8a9aad;
+            font-size: 9px;
+            top: 33px;
+        }
+        &.mediumText{
+            font-size: 10px;
+            color: #556069;
+            top: 30px;
+            left: 38%;
+        }
+        &.min{
+            left: -8px;
+        }
+        &.max{
+            right: -16px;
+        }
+    }
+}
