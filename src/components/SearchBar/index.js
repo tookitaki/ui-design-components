@@ -2,6 +2,7 @@ import React from 'react';
 import filter from 'lodash/filter';
 import isObject from 'lodash/isObject';
 import unionBy from 'lodash/unionBy';
+import includes from 'lodash/includes';
 
 export default class FilteredList extends React.Component {
   constructor(props) {
@@ -24,12 +25,32 @@ export default class FilteredList extends React.Component {
         if (isObject(initialItems[0])) {
           if (id) {
             let filterResults = [];
+            const filteredKeyword = searchKeyword.trim().replace('\\', '');
+
+            // loop properties of objects based on first element of the list
             Object.keys(initialItems[0]).map(key => {
-              const filteredArray = filter(initialItems, [key, searchKeyword]);
+              
+              // Search for rows matching the searchKeyword
+              const filteredArray = filter(initialItems, o => {
+                const column = o[key];
+                if (Array.isArray(column)) {
+                  const columnList = column.filter(item  => {
+                    return includes(`${item}`.toLowerCase(), filteredKeyword.toLowerCase());
+                  });
+
+                  return columnList.length > 0;
+                }
+
+                return includes(`${column}`.toLowerCase(), filteredKeyword.toLowerCase());
+              });
+
+              // finally, set the results
               const placeholderArray = filterResults.concat(filteredArray);
               filterResults = placeholderArray;
             });
 
+
+            // eliminate any duplicates by id
             updatedObjectList = unionBy(filterResults, id);
 
             if (onFilter) {
@@ -41,8 +62,7 @@ export default class FilteredList extends React.Component {
         }
 
         const updatedList = initialItems.filter(item  => {
-          return item.toLowerCase().search(
-            searchKeyword.toLowerCase()) !== -1;
+          return includes(`${item}`.toLowerCase(), searchKeyword.toLowerCase());
         });
   
         if (onFilter) {
