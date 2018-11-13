@@ -49,6 +49,62 @@ export default class SearchBarSandbox extends React.Component {
               <List items={items} />
             </div>
           </div>
+
+          <div className="row" style={{ margin: '50px', background: 'rgba(255, 255, 153, 0.25)', padding: '20px' }}>
+            <code>
+              <p>{`import { SearchBar } from 'ui-design-components';`}</p>
+              <br />
+              <br />
+              <br />
+
+              <p>{`state = {
+                    initialItems: [
+                      "Apples",
+                      "Broccoli",
+                      "Chicken",
+                      "Duck",
+                      "Eggs",
+                      "Fish",
+                      "Granola",
+                      "Hash Browns"
+                    ],
+                    items: [
+                      "Apples",
+                      "Broccoli",
+                      "Chicken",
+                      "Duck",
+                      "Eggs",
+                      "Fish",
+                      "Granola",
+                      "Hash Browns"
+                    ],
+                  };`}
+              </p>
+
+              <br />
+              <br />
+              <br />
+              
+              <p>{`onFilterItems = filteredItems => {`}</p>
+              <p>&emsp;&emsp;{`this.setState({`}</p>
+              <p>&emsp;&emsp;&emsp;&emsp;{`...this.state,`}</p>
+              <p>&emsp;&emsp;&emsp;&emsp;{`items: filteredItems,`}</p>
+              <p>&emsp;&emsp;{`});`}</p>
+              <p>{`}`}</p>
+
+              <br />
+              <br />
+              <br />
+
+              <p>{`const { initialItems, items } = this.state;`}</p>
+
+              <br />
+              <br />
+              <br />
+
+              <p>{`<SearchBar initialItems={initialItems} onFilter={this.onFilterItems} />`}</p>
+            </code>
+          </div>
         </div>
       );
     }

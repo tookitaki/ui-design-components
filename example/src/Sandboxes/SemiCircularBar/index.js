@@ -27,9 +27,41 @@ const SemiCircularBarSandbox = () => {
             value={SemiCircularBar_SAMPLE_VALUE}
             showMin={SemiCircularBar_SAMPLE_SHOWMIN}
             showMax={SemiCircularBar_SAMPLE_SHOWMAX}
-            showText={SemiCircularBar_SAMPLE_SHOWTEXT}
-          />
+            showText={SemiCircularBar_SAMPLE_SHOWTEXT} />
         </div>
+      </div>
+
+      <div className="row" style={{ margin: '50px', background: 'rgba(255, 255, 153, 0.25)', padding: '20px' }}>
+        <code>
+          <p>{`import { SemiCircularBar } from 'ui-design-components';`}</p>
+          <br />
+          <br />
+          <br />
+
+
+          <p>{`const SemiCircularBar_SAMPLE_THICKNESS = 10;`}</p>
+          <p>{`const SemiCircularBar_SAMPLE_COLOR = '#4CAF50';`}</p>
+          <p>{`const SemiCircularBar_SAMPLE_MIN = 0;`}</p>
+          <p>{`const SemiCircularBar_SAMPLE_MAX = 100;`}</p>
+          <p>{`const SemiCircularBar_SAMPLE_VALUE = 30;`}</p>
+          <p>{`const SemiCircularBar_SAMPLE_SHOWMIN = false;`}</p>
+          <p>{`const SemiCircularBar_SAMPLE_SHOWMAX = false;`}</p>
+          <p>{`const SemiCircularBar_SAMPLE_SHOWTEXT = false;`}</p>
+
+          <br />
+          <br />
+          <br />
+
+          <p>{`<SemiCircularBar`}</p>
+          <p>&emsp;&emsp;{`thickness={SemiCircularBar_SAMPLE_THICKNESS}`}</p>
+          <p>&emsp;&emsp;{`color={SemiCircularBar_SAMPLE_COLOR}`}</p>
+          <p>&emsp;&emsp;{`min={SemiCircularBar_SAMPLE_MIN}`}</p>
+          <p>&emsp;&emsp;{`max={SemiCircularBar_SAMPLE_MAX}`}</p>
+          <p>&emsp;&emsp;{`value={SemiCircularBar_SAMPLE_VALUE}`}</p>
+          <p>&emsp;&emsp;{`showMin={SemiCircularBar_SAMPLE_SHOWMIN}`}</p>
+          <p>&emsp;&emsp;{`showMax={SemiCircularBar_SAMPLE_SHOWMAX}`}</p>
+          <p>&emsp;&emsp;{`showText={SemiCircularBar_SAMPLE_SHOWTEXT} />`}</p>
+        </code>
       </div>
     </div>
   );
