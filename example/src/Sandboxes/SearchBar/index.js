@@ -103,6 +103,12 @@ export default class SearchBarSandbox extends React.Component {
               <br />
 
               <p>{`<SearchBar initialItems={initialItems} onFilter={this.onFilterItems} />`}</p>
+
+              <br />
+              <br />
+              <br />
+
+              <p>* The list is a separate component and is not a part of the SearchBar component</p>
             </code>
           </div>
         </div>
