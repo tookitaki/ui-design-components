@@ -1,4 +1,5 @@
 export { default as Wait4Me } from './components/Wait4Me'
+export { default as Panel } from './components/Panel'
 export { default as SearchBar } from './components/SearchBar'
 export { default as CircularProgressBar } from './components/CircularProgressBar'
 export { default as FigureItem } from './components/FigureItem'
