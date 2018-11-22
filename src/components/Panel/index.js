@@ -20,7 +20,7 @@ class Panel extends React.Component {
   renderHeader = () => {
     const { title, } = this.props;
     const { isCollapsed, } = this.state;
-    const collapseIconClass = isCollapsed ? 'fa fa-minus' : 'fa fa-plus';
+    const collapseIconClass = isCollapsed ? 'fa fa-plus' : 'fa fa-minus';
     return (
       <div className="card-header" style={{ background: '#335777' }} >
         <div className="row">
