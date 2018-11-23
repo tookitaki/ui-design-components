@@ -22,6 +22,9 @@ const GeneralDropdownSandbox = () => {
     <div>
       <DropdownSandbox sampleItems={sampleItems} />
 
+      <hr />
+      <hr />
+
       <MultiDropdownSandbox sampleItems={sampleItems} />
     </div>
   );
