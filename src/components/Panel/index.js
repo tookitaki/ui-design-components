@@ -18,9 +18,18 @@ class Panel extends React.Component {
   }
 
   renderHeader = () => {
-    const { title, } = this.props;
+    const { title, isCollapsible, } = this.props;
     const { isCollapsed, } = this.state;
     const collapseIconClass = isCollapsed ? 'fa fa-plus' : 'fa fa-minus';
+
+    const collapseButton = <p className="text-right" style={{ margin: 0 }}>
+      <button
+        className={style.collapseBtn}
+        onClick={ () => this.onCollapseClick() }>
+        <i className={collapseIconClass}></i>
+      </button>
+    </p>;
+
     return (
       <div className="card-header" style={{ background: '#335777' }} >
         <div className="row">
@@ -28,13 +37,7 @@ class Panel extends React.Component {
             { title || '' }
           </div>
           <div className="col-sm-2">
-            <p className="text-right" style={{ margin: 0 }}>
-              <button
-                className={style.collapseBtn}
-                onClick={ () => this.onCollapseClick() }>
-                <i className={collapseIconClass}></i>
-              </button>
-            </p>
+            { isCollapsible ? collapseButton : null }
           </div>
         </div>
       </div>
