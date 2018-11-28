@@ -1,17 +1,17 @@
 import React from 'react';
 import { Tabs } from 'antd';
 
-import CircularProgressBarSandbox from './sandboxes/CircularProgressBar';
-import DropdownSandbox from './sandboxes/Dropdown';
-import FigureItemSandbox from './sandboxes/FigureItem';
-import FilterDropdownSandbox from './sandboxes/FilterDropdown';
-import PanelSandbox from './sandboxes/Panel';
-import RangeDtPickerSandbox from './sandboxes/RangedDtPicker';
-import SearchBarSandbox from './sandboxes/SearchBar';
-import SemiCircularBarSandbox from './sandboxes/SemiCircularBar';
-import StatusFilterSandbox from './sandboxes/StatusFilter';
-import { UniTableSandbox, UniTableSearchSandbox } from './sandboxes/UniTable';
-import Wait4MeSandbox from './sandboxes/Wait4Me';
+import CircularProgressBarSandbox from './playground/CircularProgressBar';
+import DropdownSandbox from './playground/Dropdown';
+import FigureItemSandbox from './playground/FigureItem';
+import FilterDropdownSandbox from './playground/FilterDropdown';
+import PanelSandbox from './playground/Panel';
+import RangeDtPickerSandbox from './playground/RangedDtPicker';
+import SearchBarSandbox from './playground/SearchBar';
+import SemiCircularBarSandbox from './playground/SemiCircularBar';
+import StatusFilterSandbox from './playground/StatusFilter';
+import { UniTableSandbox, UniTableSearchSandbox } from './playground/UniTable';
+import Wait4MeSandbox from './playground/Wait4Me';
 
 const TabPane = Tabs.TabPane;
 
