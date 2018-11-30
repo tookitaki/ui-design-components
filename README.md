@@ -7,6 +7,8 @@
 2. `yarn add antd`
 3. You're good to go!
 
+## Setting up development environment to add more components to the library:
+
 ### Install
 
 ```bash
