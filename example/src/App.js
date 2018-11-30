@@ -21,6 +21,9 @@ const App = () => {
       defaultActiveKey="1"
       tabPosition="left">
 
+
+
+
       <TabPane tab="CircularProgressBar Sandbox" key="1"><CircularProgressBarSandbox /></TabPane>
       <TabPane tab="Dropdown Sandbox" key="2"><DropdownSandbox /></TabPane>
       <TabPane tab="FigureItem Sandbox" key="3"><FigureItemSandbox /></TabPane>
