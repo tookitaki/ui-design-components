@@ -2,21 +2,26 @@
 
 > tookitaki react ui components in common, based on [Ant Design](https://ant.design)
 
-## Install
+## Add ui-design-components package on your project
+1. `yarn add git+https://github.com/tookitaki/ams-workflow-ui.git`
+2. `yarn add antd`
+3. You're good to go!
+
+### Install
 
 ```bash
 npm install ./[path to this project]
 ```
 
-## Usage
+### Usage
 
-### before you go, setup the css from your app's entry
+#### before you go, setup the css from your app's entry
 
 ```js
 import 'antd/dist/antd.css'
 ```
 
-### then you can do
+#### then you can do
 
 ```jsx
 import React, { Component } from 'react'
@@ -32,7 +37,7 @@ class Example extends Component {
 }
 ```
 
-## Example
+### Example
 
 Go inside example folder and run
 
@@ -40,7 +45,7 @@ Go inside example folder and run
 yarn start
 ```
 
-## Customization
+### Customization
 
 There are two parts to be customized,
 1. the sass files under theme directory, which control basic colors
