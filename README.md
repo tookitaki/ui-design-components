@@ -3,12 +3,12 @@
 > tookitaki react ui components in common, based on [Ant Design](https://ant.design)
 
 ## Add ui-design-components package on your project
-1. `yarn add git+https://github.com/tookitaki/ams-workflow-ui.git`
+1. `yarn add git+https://github.com/tookitaki/ui-design-components.git`
 2. `yarn add antd`
 3. You're good to go!
 
 ## Fetch ui-design-components updates for your project
-1. `yarn upgrade git+https://github.com/tookitaki/ams-workflow-ui.git`
+1. `yarn upgrade git+https://github.com/tookitaki/ui-design-components.git`
 2. You're good to go!
 
 ## Setting up development environment to add more components to the library:
