@@ -1,7 +1,7 @@
 import React from 'react';
 import { Dropdown } from 'ui-design-components';
 
-const DropdownSandbox = ({ sampleItems }) => {
+const DropdownSandbox = ({ sampleItems, defaultValue, labelKey, valueKey }) => {
   return (
     <div>
       <div style={{ marginBottom: '30px' }} className="row col-sm-12">
@@ -12,6 +12,9 @@ const DropdownSandbox = ({ sampleItems }) => {
         <div className="col-sm-3 offset-sm-2">
           <Dropdown
             items={sampleItems}
+            labelKey={labelKey}
+            valueKey={valueKey}
+            defaultValue={defaultValue}
             placeholder="Sample Dropdown"
             handleChange={() => {}}
           />
@@ -49,6 +52,9 @@ const DropdownSandbox = ({ sampleItems }) => {
           <p>&emsp;&emsp;{`<div className="col-sm-3 offset-sm-2">`}</p>
           <p>&emsp;&emsp;&emsp;&emsp;{`<Dropdown`}</p>
           <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;{`items={sampleItems}`}</p>
+          <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;{`labelKey={labelKey}`}</p>
+          <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;{`valueKey={valueKey}`}</p>
+          <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;{`defaultValue={3}`}</p>
           <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;{`placeholder="Sample Dropdown"`}</p>
           <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;{`handleChange={() => {}} />`}</p>
           <p>&emsp;&emsp;{`</div>`}</p>

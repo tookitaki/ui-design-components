@@ -1,7 +1,7 @@
 import React from 'react';
 import { MultiDropdown } from 'ui-design-components';
 
-const MultiDropdownSandbox = ({ sampleItems }) => {
+const MultiDropdownSandbox = ({ sampleItems, defaultValue, labelKey, valueKey }) => {
   return (
     <div>
       <div style={{ marginBottom: '30px', marginTop: '30px' }} className="row col-sm-12">
@@ -12,6 +12,9 @@ const MultiDropdownSandbox = ({ sampleItems }) => {
         <div className="col-sm-3 offset-sm-2">
           <MultiDropdown
             items={sampleItems}
+            labelKey={labelKey}
+            valueKey={valueKey}
+            defaultValue={defaultValue}
             placeholder="Sample Multidropdown"
             handleChange={() => {}} />
         </div>
@@ -48,6 +51,9 @@ const MultiDropdownSandbox = ({ sampleItems }) => {
           <p>&emsp;&emsp;{`<div className="col-sm-3 offset-sm-2">`}</p>
           <p>&emsp;&emsp;&emsp;&emsp;{`<MultiDropdown`}</p>
           <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;{`items={sampleItems}`}</p>
+          <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;{`labelKey="label"`}</p>
+          <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;{`valueKey="value"`}</p>
+          <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;{`defaultValue={[1, 2, 3]}`}</p>
           <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;{`placeholder="Sample Multidropdown"`}</p>
           <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;{`handleChange={() => {}} />`}</p>
           <p>&emsp;&emsp;{`</div>`}</p>
