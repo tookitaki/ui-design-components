@@ -20,12 +20,12 @@ const sampleItems = [
 const GeneralDropdownSandbox = () => {
   return (
     <div>
-      <DropdownSandbox sampleItems={sampleItems} />
+      <DropdownSandbox sampleItems={sampleItems} defaultValue={3} valueKey="value" labelKey="label" />
 
       <hr />
       <hr />
 
-      <MultiDropdownSandbox sampleItems={sampleItems} />
+      <MultiDropdownSandbox sampleItems={sampleItems} defaultValue={[1, 2]}  valueKey="value" labelKey="label" />
     </div>
   );
 }
