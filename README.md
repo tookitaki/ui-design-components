@@ -7,6 +7,10 @@
 2. `yarn add antd`
 3. You're good to go!
 
+## Fetch ui-design-components updates for your project
+1. `yarn upgrade git+https://github.com/tookitaki/ams-workflow-ui.git`
+2. You're good to go!
+
 ## Setting up development environment to add more components to the library:
 
 ### Install
