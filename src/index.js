@@ -1,5 +1,5 @@
 export { default as CircularProgressBar } from './components/CircularProgressBar'
-export { Dropdown, MultiDropdown } from './components/Dropdown';
+export { Dropdown, MultiDropdown, Option } from './components/Dropdown';
 export { default as FigureItem } from './components/FigureItem'
 export { default as FilterDropdown } from './components/FilterDropdown'
 export { default as Panel } from './components/Panel'
