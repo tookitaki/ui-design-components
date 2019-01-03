@@ -49,22 +49,24 @@ export default {
 }
 
 function output(styles, styleNodes) { //this is to keep the style source to to dist
-  const fileList = Object.keys(styleNodes)
-  fileList.forEach(function(file) {
-    const outDir = file.substring(file.lastIndexOf("/components")+12, file.lastIndexOf("/"))
-    const outputFile = file.substring(file.lastIndexOf("/components")+12, file.lastIndexOf("."))
+  // const fileList = Object.keys(styleNodes)
+  // fileList.forEach(function(file) {
+  //   const outDir = file.substring(file.lastIndexOf("/components")+12, file.lastIndexOf("/"))
+  //   const outputFile = file.substring(file.lastIndexOf("/components")+12, file.lastIndexOf("."))
     
-    const result = sass.renderSync({
-      file: file
-    })
+  //   const result = sass.renderSync({
+  //     file: file
+  //   })
     
-    const fileDir = path.resolve(__dirname, './dist/styles/'+outDir)
-    if(!existsSync(fileDir)) {
-      sh.mkdir('-p', fileDir)
-    }
-    const filename = path.resolve(__dirname, `./dist/styles/${outputFile}.css`)
-    if(!existsSync(filename)) {
-      writeFileSync(filename, result.css)
-    }
-  })
+  //   const fileDir = path.resolve(__dirname, './dist/styles/'+outDir)
+  //   if(!existsSync(fileDir)) {
+  //     sh.mkdir('-p', fileDir)
+  //   }
+  //   const filename = path.resolve(__dirname, `./dist/styles/${outputFile}.css`)
+  //   if(!existsSync(filename)) {
+  //     writeFileSync(filename, result.css)
+  //   }
+  // })
+  sh.mkdir('-p', './dist');
+  sh.cp('-R', './src/theme', './dist');
 }
