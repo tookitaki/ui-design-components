@@ -28,3 +28,35 @@ $riptide:         #87e8de !default;
 $buttermilk:      #fff1b8 !default;
 $mona-lisa:       #ffa39e !default;
 $sulu:            #b7eb8f !default;
+
+// Data Visualization
+
+// These colours should be used for data visualisations only. This includes their use on any diagrams or graphs, but not anywhere else. 
+
+// When using graphs that indicate continuous data, use gradients to illustrate progression from high to low, or vice versa.
+// Data that indicate relatively higher values should always be indicated in a darker shade, whereas data that indicate relatively lower values should always be in a lighter shade. 
+
+// Conversely, when using graphs that indicate categorical data, use distinct colours that allow the user to clearly differentiate between groups.
+// Checking WCAG is important here to ensure that the combination of colours used have clear contrast and meet accessibility standards (at least Level AA).
+
+$bordeaux:        #67001F !default;
+$cardinal:        #B2182B !default;
+$red-damask:      #D6604D !default;
+$tacao:           #F4A582 !default;
+$negroni:         #FDDBC7 !default;
+// wild-sand
+$link-water:      #D1E5F0 !default;
+$morning-glory:   #92C5DE !default;
+$boston-blue:     #4393C3 !default;
+$matisse:         #2166AC !default;
+$green-vogue:     #053061 !default;
+$tutu:            #FFF7FB !default;
+$whisper:         #ECE7F2 !default;
+$blue-haze:       #D0D1E6 !default;
+$pigeon-post:     #A6BDDB !default;
+$danube:          #74A9CF !default;
+$boston-blue:     #4393C3 !default;
+$deep-cerulean:   #0570B0 !default;
+$venice-blue:     #034E7B !default;
+$astronaut-blue:  #023858 !default;
+
