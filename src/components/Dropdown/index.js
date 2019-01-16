@@ -4,13 +4,14 @@ const Option = Select.Option;
 
 const Dropdown = (props) => {
   return (
-    <Select {...props} />
+    <Select style={{ width: '100%' }} {...props} />
   );
 }
 
 const MultiDropdown = (props) => {
   return (
     <Select
+      style={{ width: '100%' }}
       {...props}
       mode="multiple">
     </Select>
