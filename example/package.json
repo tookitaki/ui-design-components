@@ -5,16 +5,16 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
+    "antd": "^3.10.3",
+    "classnames": "^2.2.5",
+    "jquery": "^2.2.2",
+    "moment": "^2.22.1",
     "prop-types": "^15.6.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-scripts": "^1.1.4",
-    "classnames": "^2.2.5",
-    "jquery": "^2.2.2",
-    "moment": "^2.22.1",
     "recharts": "~1.1.0",
-    "antd": "^3.10.3",
-    "ui-design-components": "link:.." 
+    "ui-design-components": "https://github.com/tookitaki/ui-design-components.git"
   },
   "scripts": {
     "start": "react-scripts start",

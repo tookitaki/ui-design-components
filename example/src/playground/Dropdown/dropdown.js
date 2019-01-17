@@ -21,7 +21,6 @@ const DropdownSandbox = ({ sampleItems, defaultValue, labelKey, valueKey }) => {
       <div className="row">
         <div className="col-sm-3 offset-sm-2">
           <Dropdown
-            style={{ width: '100%' }}
             defaultValue={defaultValue}
             placeholder="Sample Dropdown"
             handleChange={() => {}}>
