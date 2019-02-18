@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, ButtonSecondary } from 'ui-design-components';
+import { Button, ButtonSecondary, ButtonTertiary } from 'ui-design-components';
 
 const ButtonSandbox = () => {
   return (
@@ -26,9 +26,15 @@ const ButtonSandbox = () => {
         </div>
       </div>
 
+      <div className="row" style={{marginBottom: '50px'}}>
+        <div className="col-sm-4 offset-sm-1">
+          <ButtonTertiary>Sample Text</ButtonTertiary>
+        </div>
+      </div>
+
       <div className="row" style={{ margin: '50px', background: 'rgba(255, 255, 153, 0.25)', padding: '20px' }}>
         <code>
-          <p>{`import { Button } from 'ui-design-components';`}</p>
+          <p>{`import { Button, ButtonSecondary, ButtonTertiary } from 'ui-design-components';`}</p>
           <br />
           <br />
           <br />
@@ -41,6 +47,12 @@ const ButtonSandbox = () => {
           <br />
 
           <p>{`<ButtonSecondary>Sample Text</ButtonSecondary>`}</p>
+
+          <br />
+          <br />
+          <br />
+
+          <p>{`<ButtonTertiary>Sample Text</ButtonTertiary>`}</p>
         </code>
       </div>
     </div>

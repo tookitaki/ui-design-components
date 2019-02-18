@@ -1,4 +1,4 @@
-export { Button, ButtonSecondary } from './components/Button'
+export { Button, ButtonSecondary, ButtonTertiary } from './components/Button'
 export { default as CircularProgressBar } from './components/CircularProgressBar'
 export { Dropdown, MultiDropdown, Option } from './components/Dropdown';
 export { default as FigureItem } from './components/FigureItem'
