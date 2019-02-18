@@ -62,3 +62,18 @@
     border-color: $dodger-blue;
   }
 }
+
+.TTButtonTertiary {
+  font-family: $theme-font;
+  color: $midnight-blue;
+  background: #fff;
+
+  border: 0px none;
+
+  padding: 7px 15px;
+  font-weight: 350;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
