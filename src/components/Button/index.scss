@@ -31,3 +31,34 @@
     border-color: $dodger-blue;
   }
 }
+
+.TTButtonSecondary {
+  font-family: $theme-font;
+  color: $mine-shaft;
+  background: #fff;
+
+  border: 2px solid $silver;
+  border-radius: 5px;
+
+  padding: 7px 15px;
+  font-weight: 350;
+
+  &:disabled {
+    background: $wild-sand;
+    border-color: $silver;
+    color: $silver;
+
+    &:hover {
+      cursor: not-allowed;
+      background: $wild-sand;
+      border-color: $silver;
+      color: $silver;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+    color: $dodger-blue;
+    border-color: $dodger-blue;
+  }
+}
