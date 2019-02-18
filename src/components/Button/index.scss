@@ -1,0 +1,33 @@
+@import '../../theme/colors';
+@import '../../theme/typography';
+
+.TTButtonPrimary {
+  font-family: $theme-font;
+  color: #fff;
+  background: $cobalt;
+
+  border: 1px solid $cobalt;
+  border-radius: 5px;
+
+  padding: 7px 15px;
+  font-weight: 350;
+
+  &:disabled {
+    background: $wild-sand;
+    border-color: $silver;
+    color: $silver;
+
+    &:hover {
+      cursor: not-allowed;
+      background: $wild-sand;
+      border-color: $silver;
+      color: $silver;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+    background: $dodger-blue;
+    border-color: $dodger-blue;
+  }
+}
