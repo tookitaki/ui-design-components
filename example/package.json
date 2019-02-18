@@ -14,7 +14,7 @@
     "react-dom": "^16.4.1",
     "react-scripts": "^1.1.4",
     "recharts": "~1.1.0",
-    "ui-design-components": "https://github.com/tookitaki/ui-design-components.git"
+    "ui-design-components": "link:.." 
   },
   "scripts": {
     "start": "react-scripts start",

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Tabs } from 'antd';
 
+import ButtonSandbox from './playground/Button';
 import CircularProgressBarSandbox from './playground/CircularProgressBar';
 import DropdownSandbox from './playground/Dropdown';
 import FigureItemSandbox from './playground/FigureItem';
@@ -23,19 +24,19 @@ const App = () => {
 
 
 
-
-      <TabPane tab="CircularProgressBar Sandbox" key="1"><CircularProgressBarSandbox /></TabPane>
-      <TabPane tab="Dropdown Sandbox" key="2"><DropdownSandbox /></TabPane>
-      <TabPane tab="FigureItem Sandbox" key="3"><FigureItemSandbox /></TabPane>
-      <TabPane tab="FilterDropdown Sandbox" key="4"><FilterDropdownSandbox /></TabPane>
-      <TabPane tab="Panel Sandbox" key="5"><PanelSandbox /></TabPane>
-      <TabPane tab="RangeDtPicker Sandbox" key="6"><RangeDtPickerSandbox /></TabPane>
-      <TabPane tab="StatusFilter Sandbox" key="7"><StatusFilterSandbox /></TabPane>
-      <TabPane tab="SemiCircularBar Sandbox" key="8"><SemiCircularBarSandbox /></TabPane>
-      <TabPane tab="SearchBar Sandbox" key="9"><SearchBarSandbox /></TabPane>
-      <TabPane tab="UniTable Sandbox" key="10"><UniTableSandbox /></TabPane>
-      <TabPane tab="UniTableSearch Sandbox" key="11"><UniTableSearchSandbox /></TabPane>
-      <TabPane tab="Wait4Me Sandbox" key="12"><Wait4MeSandbox /></TabPane>
+      <TabPane tab="Button Sandbox" key="1"><ButtonSandbox /></TabPane>
+      <TabPane tab="CircularProgressBar Sandbox" key="2"><CircularProgressBarSandbox /></TabPane>
+      <TabPane tab="Dropdown Sandbox" key="3"><DropdownSandbox /></TabPane>
+      <TabPane tab="FigureItem Sandbox" key="4"><FigureItemSandbox /></TabPane>
+      <TabPane tab="FilterDropdown Sandbox" key="5"><FilterDropdownSandbox /></TabPane>
+      <TabPane tab="Panel Sandbox" key="6"><PanelSandbox /></TabPane>
+      <TabPane tab="RangeDtPicker Sandbox" key="7"><RangeDtPickerSandbox /></TabPane>
+      <TabPane tab="StatusFilter Sandbox" key="8"><StatusFilterSandbox /></TabPane>
+      <TabPane tab="SemiCircularBar Sandbox" key="9"><SemiCircularBarSandbox /></TabPane>
+      <TabPane tab="SearchBar Sandbox" key="10"><SearchBarSandbox /></TabPane>
+      <TabPane tab="UniTable Sandbox" key="11"><UniTableSandbox /></TabPane>
+      <TabPane tab="UniTableSearch Sandbox" key="12"><UniTableSearchSandbox /></TabPane>
+      <TabPane tab="Wait4Me Sandbox" key="13"><Wait4MeSandbox /></TabPane>
 
     </Tabs>
   );
