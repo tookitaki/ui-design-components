@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from 'ui-design-components';
+import { Button, ButtonSecondary } from 'ui-design-components';
 
 const ButtonSandbox = () => {
   return (
@@ -10,7 +10,19 @@ const ButtonSandbox = () => {
 
       <div className="row" style={{marginBottom: '50px'}}>
         <div className="col-sm-4 offset-sm-1">
+          <Button>Sample Text</Button>
+        </div>
+      </div>
+
+      <div className="row" style={{marginBottom: '50px'}}>
+        <div className="col-sm-4 offset-sm-1">
           <Button disabled>Sample Text</Button>
+        </div>
+      </div>
+
+      <div className="row" style={{marginBottom: '50px'}}>
+        <div className="col-sm-4 offset-sm-1">
+          <ButtonSecondary>Sample Text</ButtonSecondary>
         </div>
       </div>
 
@@ -21,8 +33,14 @@ const ButtonSandbox = () => {
           <br />
           <br />
 
-          <p>{`<Button`}</p>
-          <p>&emsp;&emsp;{`text="Sample Text />"`}</p>
+          <p>{`<Button>Sample Text</Button>`}</p>
+          <p>{`<Button disabled>Sample Text</Button>`}</p>
+
+          <br />
+          <br />
+          <br />
+
+          <p>{`<ButtonSecondary>Sample Text</ButtonSecondary>`}</p>
         </code>
       </div>
     </div>

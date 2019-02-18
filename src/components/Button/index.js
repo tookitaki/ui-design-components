@@ -1,10 +1,14 @@
 import React from 'react';
 import style from './index.scss';
 
-const Button = (props) => {
+export const Button = (props) => {
   return (
     <button {...props} className={style.TTButtonPrimary}>{props.children}</button>
   );
 }
 
-export default Button;
+export const ButtonSecondary = (props) => {
+  return (
+    <button {...props} className={style.TTButtonSecondary}>{props.children}</button>
+  );
+}
