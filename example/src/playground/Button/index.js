@@ -9,26 +9,41 @@ const ButtonSandbox = () => {
       </div>
 
       <div className="row" style={{marginBottom: '50px'}}>
-        <div className="col-sm-4 offset-sm-1">
-          <Button>Sample Text</Button>
+        <div className="col-sm-1 offset-sm-1">
+          <Button>button</Button>
+        </div>
+        <div className="col-sm-3">
+          <Button size="md">button</Button>
         </div>
       </div>
 
       <div className="row" style={{marginBottom: '50px'}}>
-        <div className="col-sm-4 offset-sm-1">
-          <Button disabled>Sample Text</Button>
+        <div className="col-sm-1 offset-sm-1">
+          <Button disabled>button</Button>
+        </div>
+
+        <div className="col-sm-3">
+          <Button disabled size="md">button</Button>
         </div>
       </div>
 
       <div className="row" style={{marginBottom: '50px'}}>
-        <div className="col-sm-4 offset-sm-1">
-          <ButtonSecondary>Sample Text</ButtonSecondary>
+        <div className="col-sm-1 offset-sm-1">
+          <ButtonSecondary>button</ButtonSecondary>
+        </div>
+
+        <div className="col-sm-3">
+          <ButtonSecondary size="md">button</ButtonSecondary>
         </div>
       </div>
 
       <div className="row" style={{marginBottom: '50px'}}>
-        <div className="col-sm-4 offset-sm-1">
-          <ButtonTertiary>Sample Text</ButtonTertiary>
+        <div className="col-sm-1 offset-sm-1">
+          <ButtonTertiary>button</ButtonTertiary>
+        </div>
+
+        <div className="col-sm-3">
+          <ButtonTertiary size="md">button</ButtonTertiary>
         </div>
       </div>
 
