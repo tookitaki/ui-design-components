@@ -10,7 +10,15 @@
   border-radius: 5px;
 
   padding: 7px 15px;
-  font-weight: 350;
+
+  font-weight: 300;
+  letter-spacing: 1px;
+
+  &.buttonMedium {
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+  }
 
   &:disabled {
     background: $wild-sand;
@@ -43,6 +51,12 @@
   padding: 7px 15px;
   font-weight: 350;
 
+  &.buttonMedium {
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+  }
+
   &:disabled {
     background: $wild-sand;
     border-color: $silver;
@@ -72,6 +86,10 @@
 
   padding: 7px 15px;
   font-weight: 350;
+
+  &.buttonMedium {
+    font-size: 12px;
+  }
 
   &:hover {
     cursor: pointer;
