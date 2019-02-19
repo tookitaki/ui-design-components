@@ -10,6 +10,10 @@ export const Button = props => {
       return <button {...props} className={classnames(style.TTButtonPrimary, style.buttonMedium)}>
       {props.children}
       </button>;
+    case 'sm':
+      return <button {...props} className={classnames(style.TTButtonPrimary, style.buttonSmall)}>
+      {props.children}
+      </button>;
     default:
       return <button {...props} className={style.TTButtonPrimary}>{props.children}</button>;
   }
@@ -23,6 +27,10 @@ export const ButtonSecondary = props => {
       return <button {...props} className={classnames(style.TTButtonSecondary, style.buttonMedium)}>
       {props.children}
       </button>;
+    case 'sm':
+      return <button {...props} className={classnames(style.TTButtonSecondary, style.buttonSmall)}>
+      {props.children}
+      </button>;
     default:
       return <button {...props} className={style.TTButtonSecondary}>{props.children}</button>;
   }
@@ -34,6 +42,10 @@ export const ButtonTertiary = props => {
       return <button {...props} className={style.TTButtonTertiary}>{props.children}</button>;
     case 'md':
       return <button {...props} className={classnames(style.TTButtonTertiary, style.buttonMedium)}>
+      {props.children}
+      </button>;
+    case 'sm':
+      return <button {...props} className={classnames(style.TTButtonTertiary, style.buttonSmall)}>
       {props.children}
       </button>;
     default:

@@ -12,11 +12,18 @@
   padding: 7px 15px;
 
   font-weight: 300;
+  font-size: 20px;
   letter-spacing: 1px;
 
   &.buttonMedium {
     padding: 5px 10px;
     border-radius: 4px;
+    font-size: 16px;
+  }
+
+  &.buttonSmall {
+    padding: 2px 11px;
+    border-radius: 3px;
     font-size: 12px;
   }
 
@@ -49,11 +56,18 @@
   border-radius: 5px;
 
   padding: 7px 15px;
+  font-size: 20px;
   font-weight: 350;
 
   &.buttonMedium {
     padding: 5px 10px;
     border-radius: 4px;
+    font-size: 16px;
+  }
+
+  &.buttonSmall {
+    padding: 2px 11px;
+    border-radius: 3px;
     font-size: 12px;
   }
 
@@ -85,9 +99,16 @@
   border: 0px none;
 
   padding: 7px 15px;
+  font-size: 20px;
   font-weight: 350;
 
   &.buttonMedium {
+    padding: 5px 10px;
+    font-size: 16px;
+  }
+
+  &.buttonSmall {
+    padding: 2px 11px;
     font-size: 12px;
   }
 

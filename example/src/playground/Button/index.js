@@ -12,8 +12,13 @@ const ButtonSandbox = () => {
         <div className="col-sm-1 offset-sm-1">
           <Button>button</Button>
         </div>
-        <div className="col-sm-3">
+
+        <div className="col-sm-1">
           <Button size="md">button</Button>
+        </div>
+
+        <div className="col-sm-1">
+          <Button size="sm">button</Button>
         </div>
       </div>
 
@@ -22,8 +27,12 @@ const ButtonSandbox = () => {
           <Button disabled>button</Button>
         </div>
 
-        <div className="col-sm-3">
+        <div className="col-sm-1">
           <Button disabled size="md">button</Button>
+        </div>
+
+        <div className="col-sm-1">
+          <Button disabled size="sm">button</Button>
         </div>
       </div>
 
@@ -32,8 +41,12 @@ const ButtonSandbox = () => {
           <ButtonSecondary>button</ButtonSecondary>
         </div>
 
-        <div className="col-sm-3">
+        <div className="col-sm-1">
           <ButtonSecondary size="md">button</ButtonSecondary>
+        </div>
+
+        <div className="col-sm-1">
+          <ButtonSecondary size="sm">button</ButtonSecondary>
         </div>
       </div>
 
@@ -42,8 +55,12 @@ const ButtonSandbox = () => {
           <ButtonTertiary>button</ButtonTertiary>
         </div>
 
-        <div className="col-sm-3">
+        <div className="col-sm-1">
           <ButtonTertiary size="md">button</ButtonTertiary>
+        </div>
+
+        <div className="col-sm-1">
+          <ButtonTertiary size="sm">button</ButtonTertiary>
         </div>
       </div>
 
