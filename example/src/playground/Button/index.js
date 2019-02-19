@@ -13,11 +13,11 @@ const ButtonSandbox = () => {
           <Button>button</Button>
         </div>
 
-        <div className="col-sm-1">
+        <div className="col-sm-1 offset-sm-1">
           <Button size="md">button</Button>
         </div>
 
-        <div className="col-sm-1">
+        <div className="col-sm-1 offset-sm-1">
           <Button size="sm">button</Button>
         </div>
       </div>
@@ -27,11 +27,11 @@ const ButtonSandbox = () => {
           <Button disabled>button</Button>
         </div>
 
-        <div className="col-sm-1">
+        <div className="col-sm-1 offset-sm-1">
           <Button disabled size="md">button</Button>
         </div>
 
-        <div className="col-sm-1">
+        <div className="col-sm-1 offset-sm-1">
           <Button disabled size="sm">button</Button>
         </div>
       </div>
@@ -41,11 +41,11 @@ const ButtonSandbox = () => {
           <ButtonSecondary>button</ButtonSecondary>
         </div>
 
-        <div className="col-sm-1">
+        <div className="col-sm-1 offset-sm-1">
           <ButtonSecondary size="md">button</ButtonSecondary>
         </div>
 
-        <div className="col-sm-1">
+        <div className="col-sm-1 offset-sm-1">
           <ButtonSecondary size="sm">button</ButtonSecondary>
         </div>
       </div>
@@ -55,11 +55,11 @@ const ButtonSandbox = () => {
           <ButtonTertiary>button</ButtonTertiary>
         </div>
 
-        <div className="col-sm-1">
+        <div className="col-sm-1 offset-sm-1">
           <ButtonTertiary size="md">button</ButtonTertiary>
         </div>
 
-        <div className="col-sm-1">
+        <div className="col-sm-1 offset-sm-1">
           <ButtonTertiary size="sm">button</ButtonTertiary>
         </div>
       </div>
@@ -85,6 +85,25 @@ const ButtonSandbox = () => {
           <br />
 
           <p>{`<ButtonTertiary>Sample Text</ButtonTertiary>`}</p>
+
+          <br />
+          <br />
+          <br />
+
+          <p>{`// You can provide size of the button whenever you prefer to use another size as stated below`}</p>
+
+          <br />
+          <br />
+          <br />
+
+          <p>{`<Button size="sm">Sample Text</Button>`}</p>
+          <p>{`<Button size="md">Sample Text</Button>`}</p>
+          <p>{`<Button size="lg">Sample Text</Button>`}</p>
+
+          <br />
+          <br />
+
+          <p>{`// Size can also be passed on other button types as well.`}</p>
         </code>
       </div>
     </div>
