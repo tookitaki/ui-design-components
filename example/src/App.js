@@ -11,6 +11,7 @@ import RangeDtPickerSandbox from './playground/RangedDtPicker';
 import SearchBarSandbox from './playground/SearchBar';
 import SemiCircularBarSandbox from './playground/SemiCircularBar';
 import StatusFilterSandbox from './playground/StatusFilter';
+import TextInputSandbox from './playground/TextInput';
 import { UniTableSandbox, UniTableSearchSandbox } from './playground/UniTable';
 import Wait4MeSandbox from './playground/Wait4Me';
 
@@ -34,9 +35,10 @@ const App = () => {
       <TabPane tab="StatusFilter Sandbox" key="8"><StatusFilterSandbox /></TabPane>
       <TabPane tab="SemiCircularBar Sandbox" key="9"><SemiCircularBarSandbox /></TabPane>
       <TabPane tab="SearchBar Sandbox" key="10"><SearchBarSandbox /></TabPane>
-      <TabPane tab="UniTable Sandbox" key="11"><UniTableSandbox /></TabPane>
-      <TabPane tab="UniTableSearch Sandbox" key="12"><UniTableSearchSandbox /></TabPane>
-      <TabPane tab="Wait4Me Sandbox" key="13"><Wait4MeSandbox /></TabPane>
+      <TabPane tab="TextInput Sandbox" key="11"><TextInputSandbox /></TabPane>
+      <TabPane tab="UniTable Sandbox" key="12"><UniTableSandbox /></TabPane>
+      <TabPane tab="UniTableSearch Sandbox" key="13"><UniTableSearchSandbox /></TabPane>
+      <TabPane tab="Wait4Me Sandbox" key="14"><Wait4MeSandbox /></TabPane>
 
     </Tabs>
   );
