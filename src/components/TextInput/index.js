@@ -5,8 +5,8 @@ import classnames from 'classnames';
 export const TextInput = props => {
   return (
     <div className={style.container}>
-      <label className={style.TTTextInputLabel}>{props.label || ''}</label>
-      <input {...props} className={style.TTTextInput} type="text" />
+      <label>{props.label || ''}</label>
+      <input {...props} type="text" />
     </div>
   );
 }
