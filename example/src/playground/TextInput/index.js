@@ -10,6 +10,12 @@ const TextInputSandbox = () => {
 
       <div className="row" style={{marginBottom: '50px'}}>
         <div className="col-sm-3 offset-sm-1">
+          <TextInput />
+        </div>
+      </div>
+
+      <div className="row" style={{marginBottom: '50px'}}>
+        <div className="col-sm-3 offset-sm-1">
           <TextInput label="field label" />
         </div>
       </div>
@@ -20,8 +26,15 @@ const TextInputSandbox = () => {
           <br />
           <br />
           <br />
-
+          
+          <p>{`// Input without label`}</p>
           <p>{`<TextInput />`}</p>
+
+          <br />
+          <br />
+
+          <p>{`// Input with label`}</p>
+          <p>{`<TextInput label="field label" />`}</p>
 
         </code>
       </div>
