@@ -9,7 +9,7 @@ const TextInputSandbox = () => {
       </div>
 
       <div className="row" style={{marginBottom: '50px'}}>
-        <div className="col-sm-2 offset-sm-1">
+        <div className="col-sm-3 offset-sm-1">
           <TextInput label="field label" />
         </div>
       </div>
