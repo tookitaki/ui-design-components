@@ -2,6 +2,10 @@ import React from 'react';
 import style from './index.scss';
 import classnames from 'classnames';
 
+import { Button as AntDButton } from 'antd';
+
+const ButtonGroup = AntDButton.Group;
+
 export const Button = props => {
   switch(props.size) {
     case 'lg':
@@ -51,4 +55,8 @@ export const ButtonTertiary = props => {
     default:
       return <button {...props} className={style.TTButtonTertiary}>{props.children}</button>;
   }
+}
+
+export const GroupedButton = props => {
+  return <ButtonGroup>{props.children}</ButtonGroup>;
 }
