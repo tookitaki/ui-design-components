@@ -1,6 +1,7 @@
 import React from 'react';
 import IconTextButtonSandbox from './buttonIconText';
 import IconButtonSandbox from './buttonIcon';
+import GroupedButtonSandbox from './groupedButton';
 import { Button, ButtonSecondary, ButtonTertiary } from 'ui-design-components';
 
 const ButtonSandbox = () => {
@@ -108,6 +109,8 @@ const ButtonSandbox = () => {
           <p>{`// Size can also be passed on other button types as well.`}</p>
         </code>
       </div>
+
+      <GroupedButtonSandbox />
 
       <IconButtonSandbox />
 
