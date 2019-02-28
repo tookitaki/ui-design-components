@@ -18,24 +18,64 @@
     font-weight: 200;
   }
 
-  input {
-    flex: 1;
-  
-    font-family: $theme-font;
-    font-size: 14px;
-    font-weight: 400;
-    color: $mine-shaft;
-  
-    border: 2px solid $silver;
-    border-radius: 3px;
-    padding: 5px 15px;
-  
-    transition: 0.5s border-color;
+  .validationWrapper {
+    display: flex;
+    justify-content: space-between;
 
-    &:focus {
+    input {
+      flex: 1;
+    
+      font-family: $theme-font;
+      font-size: 14px;
+      font-weight: 400;
+      color: $mine-shaft;
+    
+      border: 2px solid $silver;
+      border-radius: 3px;
+      padding: 5px 15px;
+    
       transition: 0.5s border-color;
-      border-color: $cobalt;
-      color: $cobalt;
+  
+      &:focus {
+        transition: 0.5s border-color;
+        border-color: $cobalt;
+        color: $cobalt;
+      }
+
+      &.inputSuccess {
+        border-color: $fern-frond;
+      }
+
+      &.inputDanger {
+        border-color: $metallic-copper;
+      }
     }
+  
+    .validationIconSuccess {
+      background-color: $sulu;
+      color: #ffffff;
+      padding: 2px 20px 2px 5px;
+      margin: 5px 10px;
+      border-radius: 20px;
+      width: 25px;
+      height: 25px;
+    }
+
+    .validationIconDanger {
+      background-color: $mona-lisa;
+      color: #ffffff;
+      padding: 2px 10px 0px 10px;
+      margin: 5px 10px;
+      border-radius: 20px;
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  .validationMessage {
+    font-family: $theme-font;
+    font-size: 11px;
+    color: $metallic-copper;
+    margin-top: 5px;
   }
 }

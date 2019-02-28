@@ -110,11 +110,9 @@ const ButtonSandbox = () => {
         </code>
       </div>
 
-      <GroupedButtonSandbox />
-
       <IconButtonSandbox />
-
       <IconTextButtonSandbox />
+      <GroupedButtonSandbox />
     </div>
   );
 }
