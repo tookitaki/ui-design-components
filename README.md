@@ -8,7 +8,7 @@
 3. You're good to go!
 
 ## Fetch ui-design-components updates for your project
-1. `yarn upgrade https://github.com/tookitaki/ui-design-components.git`
+1. `yarn upgrade ui-design-components`
 2. You're good to go!
 
 ## Setting up development environment to add more components to the library:
