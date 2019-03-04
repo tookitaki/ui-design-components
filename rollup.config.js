@@ -36,7 +36,11 @@ export default {
     postcss({
       modules: true,
       extensions: ['.css'],
-      sourceMap: false
+      sourceMap: false,
+      use : [
+        'sass', 
+        ['less', { javascriptEnabled: true }]
+      ],
     }),
     url(),
     svgr(),
