@@ -1,0 +1,13 @@
+@import '../../theme/colors';
+@import '../../theme/typography';
+
+.TTLink {
+  font-family: $theme-font;
+  color: $midnight-blue;
+  font-size: 14px;
+
+  &:hover {
+    color: $dodger-blue;
+    cursor: pointer;
+  }
+}
