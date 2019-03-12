@@ -16,7 +16,7 @@ const PaginationSandbox = () => {
       </div>
 
       <div className="row col-sm-12">
-        <p><small>Please refer to Ant Design's documentation for Pagination for props info</small></p>
+        <p><small>Please refer to Ant Design's documentation for props info</small></p>
       </div>
 
       <div className="row col-sm-12" style={{marginBottom: '50px'}}>
