@@ -11,6 +11,7 @@ export { default as RangedDtPicker } from './components/RangedDtPicker';
 export { default as SearchBar } from './components/SearchBar';
 export { default as SemiCircularBar } from './components/SemiCircularBar';
 export { StatusFilter, SubstatusFilter} from './components/StatusFilter';
+export { Stepping, Step } from './components/Stepping';
 export { TextInput } from './components/TextInput';
 export { default as UniTable } from './components/UniTable';
 export { default as Wait4Me } from './components/Wait4Me';
