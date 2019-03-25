@@ -14,6 +14,7 @@ import RangeDtPickerSandbox from './playground/RangedDtPicker';
 import SearchBarSandbox from './playground/SearchBar';
 import SemiCircularBarSandbox from './playground/SemiCircularBar';
 import StatusFilterSandbox from './playground/StatusFilter';
+import SteppingSandbox from './playground/Stepping';
 import TextInputSandbox from './playground/TextInput';
 import { UniTableSandbox, UniTableSearchSandbox } from './playground/UniTable';
 import Wait4MeSandbox from './playground/Wait4Me';
@@ -37,12 +38,13 @@ const App = () => {
       <TabPane tab="Panel Sandbox" key="9"><PanelSandbox /></TabPane>
       <TabPane tab="RangeDtPicker Sandbox" key="10"><RangeDtPickerSandbox /></TabPane>
       <TabPane tab="StatusFilter Sandbox" key="11"><StatusFilterSandbox /></TabPane>
-      <TabPane tab="SemiCircularBar Sandbox" key="12"><SemiCircularBarSandbox /></TabPane>
-      <TabPane tab="SearchBar Sandbox" key="13"><SearchBarSandbox /></TabPane>
-      <TabPane tab="TextInput Sandbox" key="14"><TextInputSandbox /></TabPane>
-      <TabPane tab="UniTable Sandbox" key="15"><UniTableSandbox /></TabPane>
-      <TabPane tab="UniTableSearch Sandbox" key="16"><UniTableSearchSandbox /></TabPane>
-      <TabPane tab="Wait4Me Sandbox" key="17"><Wait4MeSandbox /></TabPane>
+      <TabPane tab="Stepping Sandbox" key="12"><SteppingSandbox /></TabPane>
+      <TabPane tab="SemiCircularBar Sandbox" key="13"><SemiCircularBarSandbox /></TabPane>
+      <TabPane tab="SearchBar Sandbox" key="14"><SearchBarSandbox /></TabPane>
+      <TabPane tab="TextInput Sandbox" key="15"><TextInputSandbox /></TabPane>
+      <TabPane tab="UniTable Sandbox" key="16"><UniTableSandbox /></TabPane>
+      <TabPane tab="UniTableSearch Sandbox" key="17"><UniTableSearchSandbox /></TabPane>
+      <TabPane tab="Wait4Me Sandbox" key="18"><Wait4MeSandbox /></TabPane>
 
     </Tabs>
   );
