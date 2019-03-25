@@ -1,5 +1,6 @@
 export { Button, ButtonSecondary, ButtonTertiary, GroupedButton } from './components/Button';
 export { default as CircularProgressBar } from './components/CircularProgressBar';
+export { default as Drawer } from './components/Drawer';
 export { Dropdown, MultiDropdown, Option } from './components/Dropdown';
 export { default as FigureItem } from './components/FigureItem';
 export { default as FilterDropdown } from './components/FilterDropdown';
