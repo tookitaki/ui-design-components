@@ -3,6 +3,7 @@ import { Tabs } from 'antd';
 
 import ButtonSandbox from './playground/Button';
 import CircularProgressBarSandbox from './playground/CircularProgressBar';
+import DrawerSandbox from './playground/Drawer';
 import DropdownSandbox from './playground/Dropdown';
 import FigureItemSandbox from './playground/FigureItem';
 import FilterDropdownSandbox from './playground/FilterDropdown';
@@ -29,22 +30,23 @@ const App = () => {
 
       <TabPane tab="Button Sandbox" key="1"><ButtonSandbox /></TabPane>
       <TabPane tab="CircularProgressBar Sandbox" key="2"><CircularProgressBarSandbox /></TabPane>
-      <TabPane tab="Dropdown Sandbox" key="3"><DropdownSandbox /></TabPane>
-      <TabPane tab="FigureItem Sandbox" key="4"><FigureItemSandbox /></TabPane>
-      <TabPane tab="FilterDropdown Sandbox" key="5"><FilterDropdownSandbox /></TabPane>
-      <TabPane tab="Link Sandbox" key="6"><LinkSandbox /></TabPane>
-      <TabPane tab="MultiEntryField Sandbox" key="7"><MultiEntryFieldSandbox /></TabPane>
-      <TabPane tab="Pagination Sandbox" key="8"><PaginationSandbox /></TabPane>
-      <TabPane tab="Panel Sandbox" key="9"><PanelSandbox /></TabPane>
-      <TabPane tab="RangeDtPicker Sandbox" key="10"><RangeDtPickerSandbox /></TabPane>
-      <TabPane tab="StatusFilter Sandbox" key="11"><StatusFilterSandbox /></TabPane>
-      <TabPane tab="Stepping Sandbox" key="12"><SteppingSandbox /></TabPane>
-      <TabPane tab="SemiCircularBar Sandbox" key="13"><SemiCircularBarSandbox /></TabPane>
-      <TabPane tab="SearchBar Sandbox" key="14"><SearchBarSandbox /></TabPane>
-      <TabPane tab="TextInput Sandbox" key="15"><TextInputSandbox /></TabPane>
-      <TabPane tab="UniTable Sandbox" key="16"><UniTableSandbox /></TabPane>
-      <TabPane tab="UniTableSearch Sandbox" key="17"><UniTableSearchSandbox /></TabPane>
-      <TabPane tab="Wait4Me Sandbox" key="18"><Wait4MeSandbox /></TabPane>
+      <TabPane tab="Drawer Sandbox" key="3"><DrawerSandbox /></TabPane>
+      <TabPane tab="Dropdown Sandbox" key="4"><DropdownSandbox /></TabPane>
+      <TabPane tab="FigureItem Sandbox" key="5"><FigureItemSandbox /></TabPane>
+      <TabPane tab="FilterDropdown Sandbox" key="6"><FilterDropdownSandbox /></TabPane>
+      <TabPane tab="Link Sandbox" key="7"><LinkSandbox /></TabPane>
+      <TabPane tab="MultiEntryField Sandbox" key="8"><MultiEntryFieldSandbox /></TabPane>
+      <TabPane tab="Pagination Sandbox" key="9"><PaginationSandbox /></TabPane>
+      <TabPane tab="Panel Sandbox" key="10"><PanelSandbox /></TabPane>
+      <TabPane tab="RangeDtPicker Sandbox" key="11"><RangeDtPickerSandbox /></TabPane>
+      <TabPane tab="StatusFilter Sandbox" key="12"><StatusFilterSandbox /></TabPane>
+      <TabPane tab="Stepping Sandbox" key="13"><SteppingSandbox /></TabPane>
+      <TabPane tab="SemiCircularBar Sandbox" key="14"><SemiCircularBarSandbox /></TabPane>
+      <TabPane tab="SearchBar Sandbox" key="15"><SearchBarSandbox /></TabPane>
+      <TabPane tab="TextInput Sandbox" key="16"><TextInputSandbox /></TabPane>
+      <TabPane tab="UniTable Sandbox" key="17"><UniTableSandbox /></TabPane>
+      <TabPane tab="UniTableSearch Sandbox" key="18"><UniTableSearchSandbox /></TabPane>
+      <TabPane tab="Wait4Me Sandbox" key="19"><Wait4MeSandbox /></TabPane>
 
     </Tabs>
   );
