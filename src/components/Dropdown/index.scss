@@ -1,0 +1,28 @@
+@import '../../theme/colors';
+@import '../../theme/typography';
+
+.TTDropdown {
+  * {
+      border-width: 2px;
+
+    &:hover {
+      border-color: $cobalt;
+      * {
+        color: $cobalt;
+        border-color: $cobalt;
+        border-width: 2px;
+        outline: none;
+      }
+    }
+
+    &:focus {
+      border-color: $cobalt;
+      * {
+        color: $cobalt;
+        border-color: $cobalt;
+        border-width: 2px;
+        outline: none;
+      }
+    }
+  }
+}
