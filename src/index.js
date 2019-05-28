@@ -6,6 +6,7 @@ export { default as FigureItem } from './components/FigureItem';
 export { default as FilterDropdown } from './components/FilterDropdown';
 export { default as Link } from './components/Link';
 export { default as MultiEntryField } from './components/MultiEntryField';
+export { default as Notification } from './components/Notification';
 export { default as Pagination } from './components/Pagination';
 export { default as Panel } from './components/Panel';
 export { default as RangedDtPicker } from './components/RangedDtPicker';
